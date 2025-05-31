@@ -14,8 +14,8 @@ Aplikasi ini bertujuan untuk menyediakan platform dasar untuk mencatat dan menge
 
 1.  **Clone Repositori:**
     ```bash
-    git clone https://github.com/USERNAME_ANDA/NAMA_REPO_ANDA.git
-    cd NAMA_REPO_ANDA
+    git clone https://github.com/2308107010040_MuhammadSidqiAlfareza_Miniproject4
+    cd 2308107010040_MuhammadSidqiAlfareza_Miniproject4
     ```
 
 2.  **Install Dependensi Composer:**
@@ -40,32 +40,22 @@ Aplikasi ini bertujuan untuk menyediakan platform dasar untuk mencatat dan menge
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=nama_database_anda  # Ganti dengan nama database yang akan Anda gunakan
-    DB_USERNAME=username_database_anda # Ganti dengan username database Anda
-    DB_PASSWORD=password_database_anda # Ganti dengan password database Anda (kosongkan jika tidak ada)
+    DB_DATABASE=db_sistem_pengadaan  
     ```
 
 6.  **Buat Database:**
-    Buat database baru di MySQL/MariaDB (misalnya melalui phpMyAdmin) dengan nama yang telah Anda tentukan di `DB_DATABASE` pada file `.env`.
+    Buat database baru di MySQL/MariaDB (misalnya melalui phpMyAdmin) dengan nama db_sistem_pengadaan di `DB_DATABASE` pada file `.env`.
 
 7.  **Jalankan Migrasi dan Seeder:**
     Perintah ini akan membuat struktur tabel dan mengisi data awal (jika seeder sudah dibuat):
     ```bash
     php artisan migrate:fresh --seed
     ```
-    Atau jika Anda hanya ingin menjalankan migrasi:
-    ```bash
-    php artisan migrate
-    ```
-    Dan seeder secara terpisah:
-    ```bash
-    php artisan db:seed
-    ```
-
+   
 8.  **Jalankan Server Pengembangan Laravel:**
     ```bash
     php artisan serve
     ```
 
 9.  **Akses Aplikasi:**
-    Buka browser Anda dan kunjungi alamat yang ditampilkan (biasanya `http://127.0.0.1:8000` atau `http://localhost:8000`). Halaman utama akan mengarahkan Anda ke daftar barang. Anda dapat mengakses daftar jasa melalui link navigasi di header atau langsung ke URL `/jasa`.
+    Buka browser dan kunjungi alamat yang ditampilkan yaitu `http://127.0.0.1:8000` atau `http://localhost:8000`). Halaman utama akan mengarahkan Anda ke daftar barang.
